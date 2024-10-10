@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="Lmjq-3h-hnMYy1v5dVuj" name="Page-1">
+        <mxGraphModel dx="512" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="whiteSpace=wrap;html=1;rounded=1;glass=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="290" width="230" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Valuta&lt;br&gt;---------------&lt;br&gt;navn: String&lt;br&gt;kurs: double&lt;br&gt;-------------&lt;br&gt;getNavn(): String&lt;br&gt;tilNorskeKroner(double): double&lt;br&gt;fraNorskeKroner(double): double&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=0;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="290" width="230" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;valutaklient&lt;br&gt;---------------&lt;br&gt;scanner: Scanner&lt;br&gt;dollar: Valuta&lt;br&gt;euro: Valuta&lt;br&gt;zimbabwe_dollar: Valuta&lt;br&gt;avslutt: boolean&lt;br&gt;valgtValuta: Valuta&lt;br&gt;fraNOK: boolean&lt;br&gt;tilNOK: boolean&lt;br&gt;----------------&lt;br&gt;main(String[] args): void&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;gradientColor=none;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="580" width="290" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;fontSize=14;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.44;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4" target="6">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="520" y="430" as="sourcePoint"/>
+                        <mxPoint x="380" y="540" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="335" y="470"/>
+                            <mxPoint x="420" y="470"/>
+                            <mxPoint x="420" y="540"/>
+                            <mxPoint x="368" y="540"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
