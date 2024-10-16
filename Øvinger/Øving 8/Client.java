@@ -1,6 +1,5 @@
-import java.util.Scanner;
 import java.util.ArrayList;
-import javax.sql.rowset.serial.SerialException;
+import java.util.Scanner;
 
 /**
  * The Client class represents a console-based menu for managing worker data.
@@ -95,7 +94,7 @@ public class Client {
             while (subMenuRunning) {
                 System.out.println("\nMenu for: " + selectedWorker.FormalWorkerName() + ".");
                 System.out.println("1. Display worker personal information."); // Name, Age.
-                System.out.println("2. Monthly & yearly salary and tax percentage."); // Monthly salary and tax percentage.
+                System.out.println("2. Monthly & yearly salary and tax percentage.");
                 System.out.println("3. Monthly and yearly tax.");
                 System.out.println("4. Years employed.");
                 System.out.println("5. Compare years worked with number.");
