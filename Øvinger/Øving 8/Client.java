@@ -106,38 +106,32 @@ public class Client {
                 int choice = scanner.nextInt();
 
                 switch (choice) {
-                    case 1:
-                        /**
+                    case 1 -> /**
                          * Displays the worker's full name and age.
                          */
                         System.out.println("Name: " + selectedWorker.getPersonalInfo().getFirstName() + " "
                                 + selectedWorker.getPersonalInfo().getLastName() + ". Age: " + selectedWorker.workerAge() + ".");
-                        break;
 
-                    case 2:
-                        /**
+                    case 2 -> /**
                          * Displays the worker's monthly salary, yearly salary, and tax percentage.
                          */
                         System.out.println("Monthly salary: " + selectedWorker.getMonthlySalary() + " NOK. Tax percentage: " + selectedWorker.getTaxPercentage()
                                 + " %.\nYearly salary: " + selectedWorker.yearlySalaryBeforeTax() + " NOK.");
-                        break;
 
-                    case 3:
+                    case 3 -> {
                         /**
                          * Displays the worker's monthly and yearly tax amounts.
                          */
                         Worker.TaxInfo taxInfo = selectedWorker.taxesPaid();
                         System.out.println("Monthly tax amount: " + taxInfo.getMonthlyTax() + " NOK. Yearly tax amount: " + taxInfo.getYearlyTax() + " NOK.");
-                        break;
+                    }
 
-                    case 4:
-                        /**
+                    case 4 -> /**
                          * Displays the number of years the worker has been employed.
                          */
                         System.out.println("Years employed: " + selectedWorker.employmentTime() + ".");
-                        break;
 
-                    case 5:
+                    case 5 -> {
                         /**
                          * Compares the worker's employment duration with a user-provided number
                          * and checks if the worker has worked for more than that number of years.
@@ -151,9 +145,9 @@ public class Client {
                             System.out.println("No, he has not worked there for longer than " + yearChoice +
                                     " years, but he/she has worked there for " + selectedWorker.employmentTime() + " years.");
                         }
-                        break;
+                    }
 
-                    case 6:
+                    case 6 -> {
                         /**
                          * Prompts the user to enter a new monthly salary and updates the worker's salary.
                          */
@@ -161,9 +155,9 @@ public class Client {
                         double newMonthlySalary = scanner.nextDouble();
                         selectedWorker.setMonthlySalary(newMonthlySalary);
                         System.out.println("New monthly salary set to: " + selectedWorker.getMonthlySalary() + " NOK.");
-                        break;
+                    }
 
-                    case 7:
+                    case 7 -> {
                         /**
                          * Prompts the user to enter a new tax percentage and updates the worker's tax percentage.
                          */
@@ -171,17 +165,14 @@ public class Client {
                         double newMonthlyTax = scanner.nextDouble();
                         selectedWorker.setTaxPercentage(newMonthlyTax);
                         System.out.println("New tax percentage: " + selectedWorker.getTaxPercentage() + " %.");
-                        break;
+                    }
 
-                    case 8:
-                        /**
+                    case 8 -> /**
                          * Returns the user to the worker selection menu.
                          */
                         subMenuRunning = false; // Exit worker-specific menu
-                        break;
 
-                    default:
-                        System.out.println("Invalid choice. Try again.");
+                    default -> System.out.println("Invalid choice. Try again.");
                 }
 
                 /**

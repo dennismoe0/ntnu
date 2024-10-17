@@ -105,7 +105,7 @@ public class Oppgaveoversikt {
        }
        return false; // Student not found
     }
-    @Override
+    @Override // Override to display all students in a string and not memory adress
         public String toString() {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < antStud; i++) {
