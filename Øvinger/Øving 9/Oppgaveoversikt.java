@@ -111,6 +111,6 @@ public class Oppgaveoversikt {
         for (int i = 0; i < antStud; i++) {
             result.append(studenter[i].toString()).append("\n");
         } 
-    return result.toString();
+        return result.toString();
     }
 }

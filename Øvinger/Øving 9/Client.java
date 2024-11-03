@@ -37,7 +37,7 @@ public class Client {
                         int antOppg = scanner.nextInt();
                         scanner.nextLine();  // Consume newline
                         oversikt.getStudenter()[oversikt.getAntStud()] = new Student(navn, antOppg);
-                        oversikt.setAntStud(oversikt.getAntStud() + 1); // Increment student count
+                        oversikt.setAntStud(oversikt.getAntStud() + 1); // Student count
                         System.out.println("Student " + navn + " lagt til.");
                         pause(3000); // Pause for 3 seconds
                     }
